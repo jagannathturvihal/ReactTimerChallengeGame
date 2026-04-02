@@ -1,5 +1,6 @@
 import React from 'react';
 import ResultModal from './ResultModal';
+import ResultModalFowardRef from './ResultModalFowardRef';
 
 
 export default function TimerChallange({ title, targetTime }) {
@@ -23,7 +24,7 @@ export default function TimerChallange({ title, targetTime }) {
 
     return (
         <>
-            <ResultModal ref={resultDialogue} result="Lost" targetTime={targetTime} />
+            <ResultModalFowardRef ref={resultDialogue} result="Lost" targetTime={targetTime} />
             <section className="challenge">
                 <h2>{title}</h2>
                 <p className="challenge-name">
