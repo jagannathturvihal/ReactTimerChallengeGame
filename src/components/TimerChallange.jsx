@@ -13,7 +13,7 @@ export default function TimerChallange({ title, targetTime }) {
         setTimerStarted(true);
         timer.current = setTimeout(() => {
             setTimeExpired(true);
-            resultDialogue.current.showModal();
+            resultDialogue.current.openDialog();
         }, targetTime * 1000);
     }
 
